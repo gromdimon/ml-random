@@ -1,6 +1,6 @@
 # Mikrograd
 
-![awww](puppy.jpg)
+![random_header](header.jpg)
 
 A tiny ~~Micrograd~~ Mikrograd engine. This project is a modified version of the original [micrograd](https://github.com/karpathy/micrograd/tree/master) project by Andrej Karpathy. I have overridden and extended some functionalities. The core features, such as backpropagation (reverse-mode autodiff) over a dynamically built DAG and a small neural networks library, remain intact. The modifications I made include additional operations and enhancements to the existing codebase. This project can still be useful for educational purposes and serves as a lightweight framework for understanding mikrograd.
 
@@ -13,13 +13,13 @@ To install and use this modified version of micrograd, follow these steps:
 2. **Download Dependencies:** After forking the repository, clone it to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/Your-Username/micrograd.git
+   git clone https://github.com/gromdimon/ML_playground.git
    ```
 
    Next, navigate to the cloned repository:
 
    ```bash
-   cd micrograd
+   cd mikrograd
    ```
 
    Now, download the required dependencies by running the following command:
@@ -51,7 +51,7 @@ To install and use this modified version of micrograd, follow these steps:
 Below is a slightly contrived example showing a number of possible supported operations, including the additional operations I implemented:
 
 ```python
-from micrograd.engine import Value
+from .engine import Value
 
 a = Value(-4.0)
 b = Value(2.0)
@@ -73,7 +73,7 @@ print(f'{b.grad:.4f}') # prints the numerical value of dg/db
 
 ### Training a neural net
 
-The notebook `demo.ipynb` provides a full demo of training a 2-layer neural network (MLP) binary classifier. The modified neural network is initialized from the `micrograd.nn` module. The training process involves implementing a custom loss function, such as a simple svm "max-margin" binary classification loss, and using SGD for optimization. The modified version allows for more flexible network architectures and different loss functions. As shown in the notebook, using a 2-layer neural net with two 16-node hidden layers, we can achieve various decision boundaries on different datasets.
+The notebook `demo.ipynb` provides a full demo of training a 2-layer neural network (MLP) binary classifier. The modified neural network is initialized from the `MLP` module. The training process involves implementing a custom loss function, such as a simple svm "max-margin" binary classification loss, and using SGD for optimization. The modified version allows for more flexible network architectures and different loss functions. As shown in the notebook, using a 2-layer neural net with two 16-node hidden layers, we can achieve various decision boundaries on different datasets.
 
 ### Tracing / visualization
 
