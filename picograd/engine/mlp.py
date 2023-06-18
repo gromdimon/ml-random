@@ -1,10 +1,14 @@
-# The implementation of the example neural network
+# The implementation of the picograd Neuron and Layer Data Structures
+# and a multi-layer perceptron (MLP) model.
 
 import random
 from .value import Value
 
 
 class Module:
+    """
+    A base class for neural network modules.
+    """
 
     def zero_grad(self):
         for p in self.parameters():
@@ -14,6 +18,9 @@ class Module:
         return []
 
 class Neuron(Module):
+    """
+    A simple linear neuron with a single bias.
+    """
 
     def __init__(self, nin, nonlin=True):
         self.w = [Value(random.uniform(-1,1)) for _ in range(nin)]
@@ -31,6 +38,9 @@ class Neuron(Module):
         return f"{'ReLU' if self.nonlin else 'Linear'}Neuron({len(self.w)})"
 
 class Layer(Module):
+    """
+    A layer of neurons.
+    """
 
     def __init__(self, nin, nout, **kwargs):
         self.neurons = [Neuron(nin, **kwargs) for _ in range(nout)]
@@ -46,6 +56,9 @@ class Layer(Module):
         return f"Layer of [{', '.join(str(n) for n in self.neurons)}]"
 
 class MLP(Module):
+    """
+    A multi-layer perceptron model.
+    """
 
     def __init__(self, nin, nouts):
         sz = [nin] + nouts
