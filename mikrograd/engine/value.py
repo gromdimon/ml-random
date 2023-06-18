@@ -1,4 +1,4 @@
-# The implementation of the picograd core Data Structure: Value
+# The implementation of the mikrograd core Data Structure: Value
 
 class Value:
     """
@@ -10,7 +10,7 @@ class Value:
     def __init__(self, data, _children=(), _op=''):
         self.data = data
         self.grad = 0
-        # internal variables used for picograd graph construction
+        # internal variables used for mikrograd graph construction
         self._backward = lambda: None
         self._prev = set(_children)
         self._op = _op    # the op that produced this node, for graphviz / debugging / etc

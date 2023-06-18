@@ -1,4 +1,4 @@
-# The implementation of the picograd Neuron and Layer Data Structures
+# The implementation of the mikrograd Neuron and Layer Data Structures
 # and a multi-layer perceptron (MLP) model.
 
 import random
