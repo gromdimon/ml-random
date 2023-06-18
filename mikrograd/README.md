@@ -1,6 +1,6 @@
 # Mikrograd
 
-![random_header](header.jpg)
+![random_header](header.png)
 
 A tiny ~~Micrograd~~ Mikrograd engine. This project is a modified version of the original [micrograd](https://github.com/karpathy/micrograd/tree/master) project by Andrej Karpathy. I have overridden and extended some functionalities. The core features, such as backpropagation (reverse-mode autodiff) over a dynamically built DAG and a small neural networks library, remain intact. The modifications I made include additional operations and enhancements to the existing codebase. This project can still be useful for educational purposes and serves as a lightweight framework for understanding mikrograd.
 
