@@ -21,9 +21,14 @@ Welcome to ML-Random, a repository dedicated to the reimplementation of various 
 In this repository, we focus on reimplementing a range of machine learning projects, ranging from foundational algorithms to contemporary AI solutions. The goal is to deepen our understanding of these algorithms, improve upon them, and share insights with the broader community.
 
 ### Projects Included:
-- Mikrograd: [A minimal autograd engine based on micrograd of Andrej Karpathy]
-- Makemore: [A tool for generating synthetic data. Based on the work of Andrej Karpathy]
-- ...
+- Mikrograd: A minimal autograd engine based on [micrograd](https://github.com/karpathy/micrograd) of `Andrej Karpathy`
+- Makemore: A tool for generating synthetic data. Based on the [makemore](https://github.com/karpathy/makemore/tree/master) of `Andrej Karpathy`
+
+  **Also here are some older projects, which were not included into this repository:**
+- [Glycoprotein prediction with AlphaFold2](https://github.com/gromdimon/AlphaFold_Glycoprotein)
+- [Analysis of Long COVID Symptoms using BERT and Twitter Data](https://github.com/gromdimon/LongCovid)
+- [Compound bioactivity prediction](https://github.com/gromdimon/Bioactivity_prediction_project)
+- [General Machine Learning Techniques practice](https://github.com/gromdimon/Training--Projects)
 
 
 ## Technologies Used
