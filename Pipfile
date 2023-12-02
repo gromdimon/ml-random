@@ -9,6 +9,7 @@ torch = "*"
 matplotlib = "*"
 numpy = "*"
 matplotlib-inline = "*"
+scipy = "*"
 
 [dev-packages]
 
