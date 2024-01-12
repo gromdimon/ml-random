@@ -1,6 +1,6 @@
 # RuPoemGPT
 
-![header](header.png)
+<!-- ![header](header.png)
 
 RuPoemGPT is a reimplementation of the original [makemore](https://github.com/karpathy/makemore) project by Andrej Karpathy. This version just replicates the functionalities. Core features such as character-level language modeling and a simple neural network for generating text are preserved. Enhancements include improved model performance and additional text generation features. This project is particularly beneficial for those interested in natural language processing and serves as a practical platform for exploring text generation.
 
@@ -55,7 +55,7 @@ for _ in range(20):
     
     print(''.join(itos[i] for i in out))
 ```
-
+-->
 ### License
 
 MIT
