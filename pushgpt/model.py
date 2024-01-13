@@ -1,6 +1,8 @@
-# This file contains the model definition for the GPT model.
-# The model is based on the GPT-2 model by OpenAI.
-# The model is defined using PyTorch.
+"""
+This file contains the model definition for the GPT model.
+The model is based on the GPT-2 model by OpenAI.
+The model is defined using PyTorch.
+"""
 
 import torch
 import torch.nn as nn
