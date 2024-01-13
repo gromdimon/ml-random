@@ -11,6 +11,9 @@ numpy = "*"
 matplotlib-inline = "*"
 scipy = "*"
 dataclasses = "*"
+pydantic = "*"
+isort = "*"
+black = "*"
 
 [dev-packages]
 
