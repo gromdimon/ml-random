@@ -21,9 +21,9 @@ Welcome to ML-Random, a repository dedicated to the reimplementation of various 
 In this repository, we focus on reimplementing a range of machine learning projects, ranging from foundational algorithms to contemporary AI solutions. The goal is to deepen our understanding of these algorithms, improve upon them, and share insights with the broader community.
 
 ### Projects Included:
-- Mikrograd: A minimal autograd engine based on [micrograd](https://github.com/karpathy/micrograd) of `Andrej Karpathy`
-- Makemore: A tool for generating synthetic data. Based on the [makemore](https://github.com/karpathy/makemore/tree/master) of `Andrej Karpathy`
-- RuPoemGPT: A character-level language model trained on a collection of russian poems. Based on the [nanoGPT](https://github.com/karpathy/nanoGPT) of `Andrej Karpathy`
+- Mikrograd: A minimal autograd engine based on [micrograd](https://github.com/karpathy/micrograd) by `Andrej Karpathy`
+- Makemore: A tool for generating synthetic data. Based on the [makemore](https://github.com/karpathy/makemore/tree/master) by `Andrej Karpathy`
+- RuPoemGPT: A character-level language model trained on a collection of russian poems. Based on the [nanoGPT](https://github.com/karpathy/nanoGPT) by `Andrej Karpathy`
 
   **Also here are some older projects, which were not included into this repository:**
 - [Glycoprotein prediction with AlphaFold2](https://github.com/gromdimon/AlphaFold_Glycoprotein)
