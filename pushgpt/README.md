@@ -2,11 +2,28 @@
 
 ![header](header.png)
 
-RuPoemGPT is a reimplementation of the original [nanoGPT](https://github.com/karpathy/nanoGPT) project by Andrej Karpathy. This repository contains Jupyter notebooks and some python scripts used for model reconstructure and training. Core features such as character-level language modeling and a simple neural network for generating text are preserved. The core difference lies in the dataset, the model was trained on - the collection of russian poems was used. This project is particularly beneficial for those interested in natural language processing and serves as a practical platform for exploring text generation.
+RuPoemGPT is a character-level language model trained on a collection of russian poems. It is based on the original [nanoGPT](https://github.com/karpathy/nanoGPT) 
+project by Andrej Karpathy. The core difference lies in the dataset, the model was trained on - the collection of russian poems was used. This project is particularly beneficial for those interested in natural language processing and serves as a practical platform for exploring text generation.
+
+### Dataset
+
+The datasets are located in the `data` folder. Particulary the `data/data.txt` file contains the collection of russian poems. The dataset was collected from the [poetryclub](https://www.stihi.ru/) website. The dataset contains 165 unique characters. The dataset was preprocessed and cleaned before training.
+
+An alternative dataset is located in the `data/pushkin_stihi2.txt` file. It contains the collection of poems by Alexander Pushkin. It was preprocessed and cleaned before training as well. The only disadvantage of this dataset is that it is too small for training a good model.
+
+### Installation
+
+RuPoemGPT requires [Python](https://www.python.org/) 3.10+ to run.
+To install dependencies and prepare proper virtual environment, follow instructions
+from the directory above.
+
+The core files are Jupyter notebooks, `model.py`, `train.py` and `run.py`. The `train.py` file is used for training the model. The `run.py` file is used for generating text from the model. The `model.py` file contains the model architecture.
+
+In the Jupyter notebooks, you can find the worflow, which was used to train the model. 
 
 ### Example Usage
 
-A real usage example of the existing model will be described soon. Currently it's in development mode.
+To generate text from the model, run the `run.py` script. Pay attention, that hyperparameters are hardcoded in the script. If you want to change them, you need to change them in the script itself. The `run.py` script will load the model from the `model` folder and generate text from it. The generated text won't be saved.
 
 **Example:**
 
@@ -25,6 +42,9 @@ Model loaded in 0.08s
 Generation completed in 14.09s
 ```
 
+To train the model, run the `train.py` script. Pay attention, that hyperparameters are hardcoded in the script as well. For proper training please change the hyperparameters and the data source itself. While the training some checkpoints will be saved in `model` folder. The checkpoints will be saved every 2000 iterations.
+
+**Example:**
 ```sh
 (ml-random) gromdimon@Dzmitrys-MacBook-Air pushgpt % python3 train.py
 0.423845 M parameters
@@ -55,11 +75,6 @@ step 1900: train loss 2.0190, val loss 2.0306
 step 2000: train loss 1.9988, val loss 2.0071
 Iteration 2000 completed in 513.95s
 ```
-
-### Development
-
-To run the project locally, you need to install the dependencies and run the main script. Alternatively, you can run jupyter notebooks.
-
 
 ### License
 
