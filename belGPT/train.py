@@ -39,7 +39,7 @@ n_layer = 8
 dropout = 0.0
 
 config = Config(
-    vocab_size=160,  # size of the vocabulary
+    vocab_size=123,  # size of the vocabulary
     batch_size=batch_size,  # how many independent sequences will we process in parallel?
     block_size=block_size,  # what is the maximum context length for predictions?
     max_iters=max_iters,
