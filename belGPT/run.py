@@ -29,7 +29,7 @@ if __name__ == "__main__":
     )  # decoder: take a list of integers and return a corresponding string
 
     # Example model load
-    state_dict = torch.load("models/model_02.pt")
+    state_dict = torch.load("models/model_9999.pt", map_location=torch.device('cpu'))
     model = BigramLanguageModel(config=config)
     model.load_state_dict(state_dict)
     print("Model loaded in {:.2f}s".format(time.time() - start_time))
